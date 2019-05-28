@@ -1,10 +1,7 @@
-// ## Implementation preserve start class opening. 
-// ## Implementation preserve end class opening. 
-import Chat;
-// ## Implementation preserve start class import. 
-// ## Implementation preserve end class import. 
+import javax.swing.*;
+import java.awt.event.ActionListener;
 
-public class ClientUI
+public class ClientUI extends UI
 // ## Implementation preserve start class extends. 
 // ## Implementation preserve end class extends. 
 
@@ -31,6 +28,61 @@ public class ClientUI
     // ## Implementation preserve end class attributes. 
     /** Associations */
     private Chat unnamed;
+
+    @Override
+    public void enterLoginPage() {
+
+    }
+
+    @Override
+    public void enterRegisterPage() {
+
+    }
+
+    @Override
+    public void enterChatPage(String[] c, String[] f) {
+
+    }
+
+    @Override
+    public void updateChat(Message msg) {
+
+    }
+
+    @Override
+    public void setChat(Chat c) {
+
+    }
+
+    @Override
+    public void clearText() {
+
+    }
+
+    @Override
+    public String getUsername() {
+        return null;
+    }
+
+    @Override
+    public String getPassword() {
+        return null;
+    }
+
+    @Override
+    public String getEmail() {
+        return null;
+    }
+
+    @Override
+    public String getChatInput() {
+        return null;
+    }
+
+    @Override
+    public void addActionListener(ActionListener a) {
+
+    }
     // ## Implementation preserve start class associations. 
     // ## Implementation preserve end class associations. 
     // ## Implementation preserve start class other.operations. 

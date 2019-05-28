@@ -1,9 +1,6 @@
-// ## Implementation preserve start class opening. 
-// ## Implementation preserve end class opening. 
-// ## Implementation preserve start class import. 
-// ## Implementation preserve end class import. 
+import java.io.Serializable;
 
-public class Message
+public class Message implements Serializable
 // ## Implementation preserve start class extends. 
 // ## Implementation preserve end class extends. 
 
@@ -11,9 +8,44 @@ public class Message
 // ## Implementation preserve end class inheritence. 
 
 {
+    public void setType(TYPE type) {
+        this.type = type;
+    }
+
     /** Attributes */
-    public enum TYPE;
-    public Type type;
+    public enum TYPE{
+        MSG, ALRT, REQ
+    };
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public String getText() {
+        return "[" + getTimestamp() + "] " + getUser() + ":\t" + getMsg() + "\n";
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public TYPE type;
     private String timestamp;
     private String msg;
     private String user;

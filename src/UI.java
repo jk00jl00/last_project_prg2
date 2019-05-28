@@ -1,80 +1,48 @@
-// ## Implementation preserve start class opening. 
-// ## Implementation preserve end class opening. 
-import Message;
-import Chat;
-import ConsoleUI;
-import ClientUI;
-// ## Implementation preserve start class import. 
-// ## Implementation preserve end class import. 
+import java.awt.event.ActionListener;
 
-public abstract class UI extends ConsoleUI extends ClientUI
-// ## Implementation preserve start class inheritence. 
-// ## Implementation preserve end class inheritence. 
-
+public abstract class UI
 {
-    // ## Implementation preserve start class attributes. 
-    // ## Implementation preserve end class attributes. 
-    // ## Implementation preserve start class associations. 
-    // ## Implementation preserve end class associations. 
     /**
      * Operation
      *
      */
-    public void enterLoginPagev (  )
-    {
-        // ## Implementation preserve start class method.enterLoginPagev@void@@ 
-        // ## Implementation preserve end class method.enterLoginPagev@void@@ 
-    }
+    public abstract void enterLoginPage(  );
     /**
      * Operation
      *
      */
-    public void enterRegisterPage (  )
-    {
-        // ## Implementation preserve start class method.enterRegisterPage@void@@ 
-        // ## Implementation preserve end class method.enterRegisterPage@void@@ 
-    }
+    public abstract void enterRegisterPage();
     /**
      * Operation
      *
      */
-    public void enterChatPage (  )
-    {
-        // ## Implementation preserve start class method.enterChatPage@void@@ 
-        // ## Implementation preserve end class method.enterChatPage@void@@ 
-    }
+    public abstract void enterChatPage(String[] c, String[] f);
     /**
      * Operation
      *
      * @param msg
      */
-    public void updateChat ( Message msg )
-    {
-        // ## Implementation preserve start class method.updateChat@void@@@Message 
-        // ## Implementation preserve end class method.updateChat@void@@@Message 
-    }
+    public abstract void updateChat(Message msg);
     /**
      * Operation
      *
      * @param c
      */
-    public void setChat ( Chat c )
-    {
-        // ## Implementation preserve start class method.setChat@void@@@Chat 
-        // ## Implementation preserve end class method.setChat@void@@@Chat 
-    }
+    public abstract void setChat(Chat c);
     /**
      * Operation
      *
      */
-    public void clearText (  )
-    {
-        // ## Implementation preserve start class method.clearText@void@@ 
-        // ## Implementation preserve end class method.clearText@void@@ 
-    }
-    // ## Implementation preserve start class other.operations. 
-    // ## Implementation preserve end class other.operations. 
-}
+    public abstract void clearText();
 
-// ## Implementation preserve start class closing. 
-// ## Implementation preserve end class closing. 
+    public abstract String getUsername();
+
+    public abstract String getPassword();
+
+    public abstract String getEmail();
+
+    public abstract String getChatInput();
+
+
+    public abstract void addActionListener(ActionListener a);
+}

@@ -107,14 +107,12 @@ public class Server
      */
     private void run (  ) throws IOException
     {
-        System.out.println("hej");
         while(running){
             Socket s = serverSocket.accept();
             ClientListener c = new ClientListener(s);
 
             if(c != null)
                 activeClients.add(c);
-            System.out.println("då");
         }
     }
     /**
@@ -211,7 +209,6 @@ public class Server
          */
         public void sendToClient ( Message msg )
         {
-            System.out.println(msg);
             try {
                 outStream.writeObject(msg);
             } catch (IOException e) {

@@ -1,9 +1,3 @@
-// ## Implementation preserve start class opening. 
-// ## Implementation preserve end class opening. 
-import Chat;
-// ## Implementation preserve start class import. 
-// ## Implementation preserve end class import. 
-
 public class DBHandler
 // ## Implementation preserve start class extends. 
 // ## Implementation preserve end class extends. 
@@ -12,6 +6,7 @@ public class DBHandler
 // ## Implementation preserve end class inheritence. 
 
 {
+
     /** Attributes */
     private String adress;
     // ## Implementation preserve start class attributes. 
@@ -27,7 +22,8 @@ public class DBHandler
     public String requestPassword ( String usr )
     {
         // ## Implementation preserve start class method.requestPassword@String@@@String 
-        // ## Implementation preserve end class method.requestPassword@String@@@String 
+        // ## Implementation preserve end class method.requestPassword@String@@@String
+        return null;
     }
     /**
      * Operation
@@ -38,7 +34,8 @@ public class DBHandler
     public int requestChatId ( String name )
     {
         // ## Implementation preserve start class method.requestChatId@int@@@String 
-        // ## Implementation preserve end class method.requestChatId@int@@@String 
+        // ## Implementation preserve end class method.requestChatId@int@@@String
+        return 0;
     }
     /**
      * Operation
@@ -86,10 +83,11 @@ public class DBHandler
      * @param id
      * @return Chat
      */
-    public Chat requestChat ( int id )
+    public Chat requestChat (int id )
     {
         // ## Implementation preserve start class method.requestChat@Chat@@@int 
-        // ## Implementation preserve end class method.requestChat@Chat@@@int 
+        // ## Implementation preserve end class method.requestChat@Chat@@@int
+        return null;
     }
     // ## Implementation preserve start class other.operations. 
     // ## Implementation preserve end class other.operations. 

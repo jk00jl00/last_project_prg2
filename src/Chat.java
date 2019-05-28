@@ -1,29 +1,13 @@
-// ## Implementation preserve start class opening. 
-// ## Implementation preserve end class opening. 
-import Message;
-import ClientListener;
-// ## Implementation preserve start class import. 
-// ## Implementation preserve end class import. 
+import java.util.ArrayList;
 
 public class Chat
-// ## Implementation preserve start class extends. 
-// ## Implementation preserve end class extends. 
-
-// ## Implementation preserve start class inheritence. 
-// ## Implementation preserve end class inheritence. 
-
 {
     /** Attributes */
     private Message[] msgs;
-    private ArrayList<ClientListener> users;
+    private ArrayList<Server.ClientListener> users;
     private int id;
     // ## Implementation preserve start class attributes. 
-    // ## Implementation preserve end class attributes. 
-    /** Associations */
-    private Message unnamed;
-    private ClientListener unnamed;
-    // ## Implementation preserve start class associations. 
-    // ## Implementation preserve end class associations. 
+    // ## Implementation preserve end class attributes.
     /**
      * Operation
      *
@@ -49,14 +33,25 @@ public class Chat
      *
      * @param usr
      */
-    public void rmvUser ( ClientListener usr )
+    public void rmvUser ( Server.ClientListener usr )
     {
         // ## Implementation preserve start class method.rmvUser@void@@@ClientListener 
         // ## Implementation preserve end class method.rmvUser@void@@@ClientListener 
     }
-    // ## Implementation preserve start class other.operations. 
-    // ## Implementation preserve end class other.operations. 
-}
 
-// ## Implementation preserve start class closing. 
-// ## Implementation preserve end class closing. 
+    public int getLength() {
+        return this.msgs.length;
+    }
+
+    public Message[] getMsgs() {
+        return msgs;
+    }
+
+    public int getId(){
+        return id;
+    }
+
+    public Server.ClientListener[] getUsers() {
+        return users.toArray(new Server.ClientListener[0]);
+    }
+}

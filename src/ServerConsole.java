@@ -1,7 +1,4 @@
-// ## Implementation preserve start class opening. 
-// ## Implementation preserve end class opening. 
-// ## Implementation preserve start class import. 
-// ## Implementation preserve end class import. 
+import java.awt.event.ActionListener;
 
 public class ServerConsole
 // ## Implementation preserve start class extends. 
@@ -13,7 +10,7 @@ public class ServerConsole
 {
     /** Attributes */
     private Thread thread;
-    private ActionListeners listeners;
+    private ActionListener listener;
     private String input;
     // ## Implementation preserve start class attributes. 
     // ## Implementation preserve end class attributes. 
@@ -33,7 +30,7 @@ public class ServerConsole
      *
      * @return synchronized 
      */
-    public synchronized  stop (  )
+    public synchronized  void stop (  )
     {
         // ## Implementation preserve start class method.stop@synchronized_@@ 
         // ## Implementation preserve end class method.stop@synchronized_@@ 
